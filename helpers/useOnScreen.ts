@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export default function useOnScreen(ref: any, rootMargin = '0px') {
   const [isIntersecting, setIntersecting] = useState(false);
-
+//use Effect
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
